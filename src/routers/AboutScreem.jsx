@@ -7,6 +7,7 @@ import imgLetras from '../assets/icons/letras.png'
 import imgSpotify from '../assets/icons/Spotify_logo.png'
 import imgGoogle from '../assets/icons/googleLogo.png'
 import { useEffect } from 'react'
+import { FloatTarjet } from './FloatTarjet'
 
 
 export const AboutScreem = () => {
@@ -202,6 +203,7 @@ export const AboutScreem = () => {
                     console.log('false')
                 )}
             </div>
+            <FloatTarjet></FloatTarjet>
         </>
     )
 }

@@ -3,6 +3,7 @@ import { tarjetContext } from '../context/tarjetContext'
 import { useEffect, useContext } from 'react'
 import { showContext } from '../context/showContext'
 import { FloatTarjet } from './FloatTarjet'
+import img3 from '../assets/icons/save2.png'
 
 export const ShowTarjet = () => {
 
@@ -26,8 +27,8 @@ export const ShowTarjet = () => {
                             <div className="img-show">
                                 <img src={x.img} alt="" />
                             </div>
-                            <div className="btn-show">
-                                <button className='btn btn-primary' onClick={() => openTarjet(x)} >Save</button>
+                            <div onClick={() => openTarjet(x)} className="save-tarjet-S">
+                                <img className="icon-tarjet" src={img3} alt="" />
                             </div>
                             <div className="text">
                                 <h2>{x.name}</h2>

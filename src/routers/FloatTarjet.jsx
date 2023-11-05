@@ -6,6 +6,7 @@ import imgCamera from '../assets/icons/camera.png'
 import imgVideos from '../assets/icons/youtubeA.png'
 import imgMovie from '../assets/icons/movie2.png'
 import imgPictures from '../assets/icons/picture.png'
+import imgMusical from '../assets/icons/musical-note.png'
 import './styles/showTarjet.css'
 
 export const FloatTarjet = () => {
@@ -30,6 +31,9 @@ export const FloatTarjet = () => {
                     </NavLink>
                     <NavLink to='/ImgApi' className="option1">
                         <img className="icon-tarjet" src={imgPictures} alt="" />
+                    </NavLink>
+                    <NavLink to='/about' className="option1">
+                        <img className="icon-tarjet" src={imgMusical} alt="" />
                     </NavLink>
 
 

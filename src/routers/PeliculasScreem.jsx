@@ -38,7 +38,7 @@ export const PeliculasScreem = () => {
 
     return (
         <>
-            <FloatTarjet></FloatTarjet>
+            
             <div className="container">
                 <h1 className="title" >Buscador</h1>
                 <form onSubmit={handleSubmit}>
@@ -68,6 +68,7 @@ export const PeliculasScreem = () => {
                 </div>
 
             </div>
+            <FloatTarjet></FloatTarjet>
         </>
     )
 }

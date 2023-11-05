@@ -1,5 +1,6 @@
 import './styles/HomeScreem.css'
 import { Link } from "react-router-dom"
+import { FloatTarjet } from './FloatTarjet'
 
 export const HomeScreem = () => {
 
@@ -46,6 +47,7 @@ export const HomeScreem = () => {
 
                     </Link>
                 </div>
+                <FloatTarjet></FloatTarjet>
             </section>
         </>
     )

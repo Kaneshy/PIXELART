@@ -50,3 +50,41 @@
     font-style: italic;
     color: rgb(116, 116, 116);
 }
+
+@media (max-width: 750px) {
+    #labelVideo {
+        display: grid;
+        grid-template-columns: 
+            repeat(
+                auto-fit,
+                minmax(400px, 1fr)
+        );
+        gap: 20px;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        padding: 0;
+        margin: 0; 
+    }
+
+    .videoI {
+        width: 100%;
+        min-height: 0;
+        height: 350px;
+    }
+    
+    .img-containerVideo {
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 10px;
+        background-color: rgb(17, 17, 17);
+        padding: 5px;
+        user-select: none;
+        position: relative;
+    
+    }
+    .imgVideo {
+        width: 100%;
+        height: 240px;
+        border-radius: 10px;
+    }
+}

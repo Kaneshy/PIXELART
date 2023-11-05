@@ -1,10 +1,10 @@
-
 .img-show {
     max-width: 100%;
     height: auto;
     text-align: center;
     user-select: none;
 }
+
 .img-show img {
     max-width: 100%;
     height: auto;
@@ -29,6 +29,17 @@
 }
 
 
+@media (max-width: 500px) {
+    #labelA {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .text {
+        padding: 7px;
+    }
+}
+
 /* @media(max-width:991px) {
     .img-show img {
         max-width: 100%;
@@ -43,6 +54,7 @@
     border: 0.1rem solid white;
     border-radius: 15px;
     user-select: none;
+    
 }
 
 #option-container {
@@ -54,8 +66,9 @@
     padding: 15px;
     row-gap: 10px;
     align-items: center;
-    
+
 }
+
 .icon-tarjet {
     width: 30px;
 }
@@ -63,4 +76,43 @@
 .option2 {
     position: absolute;
     bottom: 15px;
+}
+
+.save-tarjet-S {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: end;
+    
+}
+
+@media (max-width: 750px) {
+    #tarjet_options {
+        position: fixed;
+        height: 50px;
+        left: 5px;
+        width: 98%;
+        bottom: 5%;
+        top: 93%;
+        background-color: black;
+    }
+    #option-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        padding: 10px;
+        gap: 5px;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .icon-tarjet {
+        width: 25px;
+    }
+
+    .option2 {
+        position: inherit;
+    }
 }

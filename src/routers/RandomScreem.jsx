@@ -1,6 +1,6 @@
 
 import './styles/ContactScreem.css'
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import { tarjetContext } from '../context/tarjetContext'
 import { NavLink } from 'react-router-dom'
 import img3 from '../assets/icons/save2.png'
@@ -17,7 +17,7 @@ export const RandomScreem = (props) => {
 
     return (
         <>
-            <FloatTarjet></FloatTarjet>
+            
             <section id='labelA' >
                 {props.value.map((x) => {
                     let { id, name, autor, img } = x
@@ -35,6 +35,7 @@ export const RandomScreem = (props) => {
                     )
                 })}
             </section>
+            <FloatTarjet></FloatTarjet>
         </>
     )
 }

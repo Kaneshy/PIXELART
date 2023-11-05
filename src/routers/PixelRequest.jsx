@@ -58,7 +58,7 @@ export const PixelRequest = () => {
 
     return (
         <>
-            <FloatTarjet></FloatTarjet>
+            
             <div className="container">
                 <h1 className="title" >Buscador</h1>
                 <form onSubmit={handleSubmit}>
@@ -87,6 +87,8 @@ export const PixelRequest = () => {
                 
 
             </div>
+            <FloatTarjet></FloatTarjet>
         </>
+
     )
 }

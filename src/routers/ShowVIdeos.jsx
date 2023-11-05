@@ -1,4 +1,3 @@
-import { tarjetContext } from '../context/tarjetContext'
 import React, { useContext } from 'react'
 import './styles/showTarjet.css'
 import './styles/Videos.css'
@@ -9,7 +8,6 @@ import { videoContext } from '../context/videoContext'
 export const ShowVideos = () => {
 
     const {showVideo } = useContext(videoContext)
-    const { openTarjet } = useContext(tarjetContext)
 
     return (
         <>
@@ -21,9 +19,6 @@ export const ShowVideos = () => {
                         <div className="container-show">
                             <div className="Video-show">
                                 <iframe className='videoI' src={x.video} allowFullScreen  ></iframe>
-                            </div>
-                            <div className="btn-show">
-                                <button className='btn btn-primary' onClick={() => openTarjet(x)} >Save</button>
                             </div>
                             <div className="text">
                                 <h2>{x.name}</h2>

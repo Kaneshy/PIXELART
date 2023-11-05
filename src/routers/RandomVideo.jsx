@@ -14,7 +14,7 @@ export const RandomVideo = (props) => {
 
     return (
         <>
-            <FloatTarjet></FloatTarjet>
+            
             <section id='labelVideo' >
                 {props.value.map((x) => {
                     let{id, name, autor, img} = x
@@ -32,6 +32,7 @@ export const RandomVideo = (props) => {
                     )
                 })}
             </section>
+            <FloatTarjet></FloatTarjet>
         </>
     )
 }

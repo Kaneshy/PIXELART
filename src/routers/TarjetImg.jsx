@@ -17,7 +17,7 @@ export const TarjetImg = () => {
     return (
 
         <>
-            <FloatTarjet></FloatTarjet>
+            
             <section id='labelA' >
                 {selectedTarjet.length > 0 ? (selectedTarjet.map(x => (
                     <>
@@ -44,6 +44,7 @@ export const TarjetImg = () => {
                 )
                 }
             </section>
+            <FloatTarjet></FloatTarjet>
         </>
     )
 }
