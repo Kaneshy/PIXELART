@@ -1,0 +1,242 @@
+:root {
+    --main-color: linear-gradient(180deg, #440000 0%, #0f0000 100%);
+    --footer-color: linear-gradient(180deg, #575757 20%, #2b2b2b 80%);
+    --containersong-color: linear-gradient(180deg, #440000 10%, #1f0000 90%);
+}
+
+body {
+    font-family: 'Geologica', sans-serif;
+    background-color: purple;
+
+}
+
+.container-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    color: rgb(240, 240, 240);
+    background: var(--main-color);
+}
+
+.container-mainAudio {
+    overflow-y: scroll;
+    min-width: 500px;
+    overflow: auto;
+    width: 100%;
+    border-radius: 15px;
+    background: var(--containersong-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+    height: 870px;
+
+}
+
+
+.audio-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+    user-select: nones;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.audio-container:hover {
+    background-color: rgb(95, 0, 0);
+}
+
+.audio-container img {
+    width: 50px;
+    height: auto;
+}
+
+.infoSongA {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artist {
+    font-style: italic;
+    color: #a7a7a7;
+    line-height: 0;
+}
+
+.audio-link {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 15px;
+    user-select: none;
+}
+
+.audio-link iframe {
+    border-radius: 25px;
+    width: 450px;
+    height: 60px;
+}
+
+.tajetEmergent {
+    width: 500px;
+    background: var(--containersong-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    user-select: none;
+    border-radius: 15px;
+}
+
+.container-TE {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    row-gap: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.container-TE img {
+    width: 250px;
+    height: auto;
+}
+
+
+.hide-TE {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.hide-TE img {
+    width: 25px;
+    height: auto;
+}
+
+.links-container {
+    align-items: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 5px;
+    width: 450px;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+.youtubeLink img {
+    width: 40px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.5;
+}
+
+.youtubeLink {
+    transition: 0.3s;
+}
+
+.youtubeLink:hover {
+    transform: scale(1.1);
+}
+
+.audio-play {
+    color: #e90f0f;
+}
+
+
+.inputTrack {
+    width: 100%;
+}
+
+.inputVolume  {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.inputVolume input[type="range"] {
+    width: 20%;
+    background: #727272;
+    transform: rotate(270deg);
+    top:52%;
+    right: 25px;
+    position: absolute;
+}
+/* Estilizar el control deslizante */
+input[type="range"] {
+    width: 60%;
+    height: 5px;
+    -webkit-appearance: none;
+    /* Desactiva la apariencia nativa del navegador */
+    appearance: none;
+    background: #b30000;
+    /* Color de fondo predeterminado */
+    border-radius: 5px;
+    /* Borde redondeado */
+}
+
+/* Cambiar el color de fondo cuando se desliza */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Desactiva la apariencia nativa del navegador */
+    appearance: none;
+    width: 10px;
+    /* Ancho del "pulgar" o control deslizante */
+    height: 10px;
+    /* Altura del "pulgar" o control deslizante */
+    background: #ffffff;
+    /* Color del "pulgar" o control deslizante */
+    border-radius: 20%;
+    /* Borde redondeado para el "pulgar" */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el "pulgar" */
+}
+
+.btns-rep {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+  
+.btnA {
+    color: #525252;
+    font-size: 27px;
+}
+
+@media (max-width: 1000px) {
+    .container-sections {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #570202;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

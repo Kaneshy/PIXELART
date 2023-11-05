@@ -1,0 +1,39 @@
+.title-pa {
+    color: purple;
+}
+
+.container-header {
+    padding: 25px;
+    user-select: none;
+}
+.container-header h2 {
+    text-align: center;
+}
+
+.container-p {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.pr {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.pr p {
+    color: white;
+}
+
+.title-pr {
+    color: purple;
+}

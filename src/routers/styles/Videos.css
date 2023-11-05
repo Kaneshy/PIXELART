@@ -1,0 +1,52 @@
+#labelVideo {
+    display: grid;
+    grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(410px, 1fr)
+    );
+    gap: 20px;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 50px 100px 0 100px;
+    
+}
+
+.img-containerVideo {
+    margin: 0 auto;
+    width: 410px;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 17);
+    padding: 5px;
+    user-select: none;
+    position: relative;
+
+}
+
+.imgVideo {
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.container-imgVideo {
+    width: 400px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.Video-show {
+    max-width: 100%;
+    text-align: center;
+    user-select: none;
+}
+
+.videoI {
+    width: 100%;
+    min-height: 710px;
+}
+
+.video-autor {
+    font-style: italic;
+    color: rgb(116, 116, 116);
+}
