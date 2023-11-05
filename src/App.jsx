@@ -5,7 +5,7 @@ import { Routes, Route, Navigate } from "react-router-dom"
 import { UsuarioProvaider } from "./routers/context/UsuarioProvaider"
 import { TarjetImg } from "./routers/TarjetImg"
 import { TarjetProvider } from "./context/TarjetProvider"
-import { ShowTarjet } from "./routers/showTarjet"
+import { ShowTarjet } from "./routers/ShowTarjet"
 import { ShowProvider } from "./context/ShowProvider"
 import dataRandom from './routers/data/dataramdom'
 import { RandomScreem } from "./routers/RandomScreem"

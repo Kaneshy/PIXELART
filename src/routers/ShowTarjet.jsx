@@ -1,6 +1,6 @@
-import { tarjetContext } from '../context/tarjetContext'
-import React, { useContext } from 'react'
 import './styles/showTarjet.css'
+import { tarjetContext } from '../context/tarjetContext'
+import { useEffect, useContext } from 'react'
 import { showContext } from '../context/showContext'
 import { FloatTarjet } from './FloatTarjet'
 import { useEffect } from 'react'
